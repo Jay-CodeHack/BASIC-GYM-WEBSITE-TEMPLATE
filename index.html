@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>FitterNet</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <style>
+            /* css style reset*/
+            body {
+                font-family: 'Oswald', sans-serif;
+                color: white;
+                margin: 0px;
+                padding: 0px;
+                background: url('Data/bg.jpg');
+                height: 100%;
+            }
+            .left {
+                display:inline-block;
+                position: absolute;
+                left: 35px;
+                top: 20px;
+            }
+            .left img {
+                width: 70px;
+                filter: invert();
+            }
+            .left div {
+                font-family: 'Oswald', sans-serif;
+                text-decoration: double underline;
+                text-align: center;
+            }
+            .mid {
+                display: block;
+                width: 33%;
+                margin: 20px auto;
+            }
+            .right {
+                display: inline-block;
+                position: absolute;
+                right: 35px;
+                top:20px;
+            }
+            .navbar {
+                display: inline-block;
+            }
+            .navbar li {
+                display: inline-block;
+                font-size: 19px;
+            }
+            .navbar li a {
+                color: white;
+                text-decoration: none;
+                padding: 10px 10px;
+            }
+            .navbar li a:hover, .navbar li a.active {
+                text-decoration: underline;
+                color: grey;
+            }
+            .btn {
+                font-family: 'Oswald', sans-serif;
+                color: white;
+                background: black;
+                padding: 0px 9px;
+                margin: 13px;
+                font-size: 19px;
+                cursor: pointer;
+                border-radius: 20px;
+            }
+            .btn:hover {
+                text-decoration: underline;
+                color: grey;
+
+            }
+            .container {
+                border: 2px solid white;
+                margin-top: 80px;
+                margin-left: 150px;
+                padding: 30px;
+                width: 33%;
+                border-radius: 28px;
+
+            }
+            .form-group {
+                text-align: center;
+            }
+            .container h1 {
+                text-align: center;
+            }
+            .form-group input{
+                text-align: center;
+                font-size: 18px;
+                padding: 3px;
+                width: 50%;
+                margin: 6px;
+                font-family: 'Oswald', sans-serif;
+                border-radius: 10px;
+            }
+            .container .btn {
+                width: 50%;
+                font-size: 18px;
+                margin-left: 110px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="left">
+                <img src="Data/logo.jpg">
+                <div>FiterNet</div>
+            </div>
+            
+            <div class="mid">
+             <ul class="navbar">
+                 <li><a href="#" class="active">Home</a></li>
+                 <li><a href="#">Fiteness Zone</a></li>
+                 <li><a href="#">About Us</a></li>
+                 <li><a href="#">Contact Us</a></li>
+             </ul>
+            </div>
+
+            <div class="right">
+                <button class="btn">Call Us</button>
+                <button class="btn">Email Us</button>
+            </div>
+
+        </header>
+
+        <div class="container">
+            <h1>Join The Mumbai's Best Gym Now</h1>
+            <form action="noaction.php" class="form-group">
+                 <div>
+                     <input placeholder="Enter Your Name">
+                 </div>
+                 <div>
+                    <input placeholder="Enter Your Age">
+                </div>
+                <div>
+                    <input placeholder="Enter Your City">
+                </div>
+                <div>
+                    <input placeholder="Enter Your Email">
+                </div>
+                <div>
+                    <input placeholder="Enter Your Contact No">
+                </div>
+            </form>
+            <button class="btn">Submit</button>
+        </div>
+
+    </body>
+</html>
